@@ -1,0 +1,9 @@
+{
+	"name": "adfdh",
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d5c5f272-54c8-4ece-8024-1fd068ef1c0e",
+		"tenantId": "44da278d-0b1a-40a0-9d8b-bd50b59e7d53"
+	}
+}
