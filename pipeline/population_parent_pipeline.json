@@ -1,5 +1,5 @@
 {
-	"name": "pipeline1",
+	"name": "population_parent_pipeline",
 	"properties": {
 		"activities": [
 			{
