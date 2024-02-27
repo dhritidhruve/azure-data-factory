@@ -2,7 +2,7 @@
 	"name": "ecdc tumbling win",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipeline": {
 			"pipelineReference": {
 				"referenceName": "ecdc ingest",
