@@ -1,5 +1,5 @@
 {
-	"name": "hospital admissions dataflow tumbling",
+	"name": "hospital admissions dataflow",
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Stopped",
