@@ -1,5 +1,5 @@
 {
-	"name": "cases deaths tumbling",
+	"name": "cases deaths dataflow",
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Stopped",
