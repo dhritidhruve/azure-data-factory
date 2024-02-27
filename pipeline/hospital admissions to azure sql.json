@@ -1,9 +1,9 @@
 {
-	"name": "cases deaths to azure sql",
+	"name": "hospital admissions to azure sql",
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "Copy data2",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -29,10 +29,8 @@
 					},
 					"sink": {
 						"type": "AzureSqlSink",
-						"preCopyScript": "TRUNCATE TABLE covid_reporting.cases_and_deaths;",
 						"writeBehavior": "insert",
-						"sqlWriterUseTableLock": false,
-						"disableMetricsCollection": false
+						"sqlWriterUseTableLock": false
 					},
 					"enableStaging": false,
 					"translator": {
@@ -46,13 +44,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "cases_deaths_sink",
+						"referenceName": "hospital_admissions_daily",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "sqldb_cases_and_deaths",
+						"referenceName": "sqldb_hospital_admissions_daily",
 						"type": "DatasetReference"
 					}
 				]
@@ -61,8 +59,6 @@
 		"folder": {
 			"name": "sql"
 		},
-		"annotations": [],
-		"lastPublishTime": "2024-02-22T17:38:50Z"
-	},
-	"type": "Microsoft.DataFactory/factories/pipelines"
+		"annotations": []
+	}
 }
