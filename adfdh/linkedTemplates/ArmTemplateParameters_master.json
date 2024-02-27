@@ -26,7 +26,7 @@
 		"ls_http_properties_typeProperties_url": {
 			"value": "@{linkedService().baseUrl}"
 		},
-		"population_storage_event_properties_typeProperties_scope": {
+		"population ingest schedule_properties_typeProperties_scope": {
 			"value": "/subscriptions/ce72e7df-3c6f-4816-beb6-fa1d44288366/resourceGroups/rsgroup/providers/Microsoft.Storage/storageAccounts/newonemine"
 		},
 		"containerUri": {

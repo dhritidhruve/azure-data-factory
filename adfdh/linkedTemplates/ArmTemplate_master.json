@@ -35,7 +35,7 @@
 			"type": "string",
 			"defaultValue": "@{linkedService().baseUrl}"
 		},
-		"population_storage_event_properties_typeProperties_scope": {
+		"population ingest schedule_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/ce72e7df-3c6f-4816-beb6-fa1d44288366/resourceGroups/rsgroup/providers/Microsoft.Storage/storageAccounts/newonemine"
 		},
@@ -105,8 +105,8 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"population_storage_event_properties_typeProperties_scope": {
-						"value": "[parameters('population_storage_event_properties_typeProperties_scope')]"
+					"population ingest schedule_properties_typeProperties_scope": {
+						"value": "[parameters('population ingest schedule_properties_typeProperties_scope')]"
 					}
 				}
 			},
