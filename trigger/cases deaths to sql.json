@@ -2,7 +2,7 @@
 	"name": "cases deaths to sql",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipeline": {
 			"pipelineReference": {
 				"referenceName": "cases deaths to azure sql",
