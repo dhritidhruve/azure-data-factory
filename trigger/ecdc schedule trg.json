@@ -1,5 +1,5 @@
 {
-	"name": "tr_ingest_ecdc",
+	"name": "ecdc schedule trg",
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Stopped",
