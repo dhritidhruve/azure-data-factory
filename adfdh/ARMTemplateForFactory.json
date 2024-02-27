@@ -35,7 +35,7 @@
 			"type": "string",
 			"defaultValue": "@{linkedService().baseUrl}"
 		},
-		"storage_event_trigger_properties_typeProperties_scope": {
+		"population_storage_event_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/ce72e7df-3c6f-4816-beb6-fa1d44288366/resourceGroups/rsgroup/providers/Microsoft.Storage/storageAccounts/newonemine"
 		}
@@ -1723,16 +1723,16 @@
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/storage_event_trigger')]",
+			"name": "[concat(parameters('factoryName'), '/population_storage_event')]",
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Stopped",
+				"runtimeState": "Started",
 				"pipelines": [
 					{
 						"pipelineReference": {
-							"referenceName": "copy population to adls",
+							"referenceName": "population_parent_pipeline",
 							"type": "PipelineReference"
 						},
 						"parameters": {}
@@ -1740,16 +1740,16 @@
 				],
 				"type": "BlobEventsTrigger",
 				"typeProperties": {
-					"blobPathBeginsWith": "/raw/blobs/population_by_age.tsv.gz",
+					"blobPathBeginsWith": "/population/blobs/population_by_age.tsv.gz",
 					"ignoreEmptyBlobs": true,
-					"scope": "[parameters('storage_event_trigger_properties_typeProperties_scope')]",
+					"scope": "[parameters('population_storage_event_properties_typeProperties_scope')]",
 					"events": [
 						"Microsoft.Storage.BlobCreated"
 					]
 				}
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/copy population to adls')]"
+				"[concat(variables('factoryId'), '/pipelines/population_parent_pipeline')]"
 			]
 		},
 		{
@@ -1771,9 +1771,9 @@
 				"type": "ScheduleTrigger",
 				"typeProperties": {
 					"recurrence": {
-						"frequency": "Day",
-						"interval": 1,
-						"startTime": "2024-02-06T08:06:00",
+						"frequency": "Hour",
+						"interval": 24,
+						"startTime": "2024-02-27T09:00:00",
 						"timeZone": "India Standard Time"
 					}
 				}
