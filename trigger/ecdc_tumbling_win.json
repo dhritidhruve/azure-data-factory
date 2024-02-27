@@ -1,5 +1,5 @@
 {
-	"name": "population_tumbling_win",
+	"name": "ecdc_tumbling_win",
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Stopped",
