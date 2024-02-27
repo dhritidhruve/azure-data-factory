@@ -1,5 +1,5 @@
 {
-	"name": "hospital_admissions_tumbling_win",
+	"name": "hospital admissions tumbling win",
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Stopped",
@@ -17,7 +17,7 @@
 				{
 					"type": "TumblingWindowTriggerDependencyReference",
 					"referenceTrigger": {
-						"referenceName": "ecdc_tumbling_win",
+						"referenceName": "ecdc tumbling win",
 						"type": "TriggerReference"
 					}
 				}
