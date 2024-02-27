@@ -2,7 +2,7 @@
 	"name": "hospital admissions dataflow",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipeline": {
 			"pipelineReference": {
 				"referenceName": "hospital_admissions df",
