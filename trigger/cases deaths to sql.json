@@ -3,6 +3,12 @@
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Stopped",
+		"pipeline": {
+			"pipelineReference": {
+				"referenceName": "cases deaths to azure sql",
+				"type": "PipelineReference"
+			}
+		},
 		"type": "TumblingWindowTrigger",
 		"typeProperties": {
 			"frequency": "Hour",
@@ -17,7 +23,7 @@
 				{
 					"type": "TumblingWindowTriggerDependencyReference",
 					"referenceTrigger": {
-						"referenceName": "cases_deaths_tumbling_win",
+						"referenceName": "cases deaths dataflow",
 						"type": "TriggerReference"
 					}
 				}
