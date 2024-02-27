@@ -2,7 +2,7 @@
 	"name": "hospital admissions to sql",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipeline": {
 			"pipelineReference": {
 				"referenceName": "hospital admissions to azure sql",
