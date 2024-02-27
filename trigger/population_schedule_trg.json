@@ -1,5 +1,5 @@
 {
-	"name": "population_storage_event",
+	"name": "population_schedule_trg",
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Started",
