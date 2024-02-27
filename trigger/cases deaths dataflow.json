@@ -2,7 +2,7 @@
 	"name": "cases deaths dataflow",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Started",
+		"runtimeState": "Stopped",
 		"pipeline": {
 			"pipelineReference": {
 				"referenceName": "cases deaths df",
