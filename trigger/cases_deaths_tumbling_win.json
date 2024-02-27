@@ -1,5 +1,5 @@
 {
-	"name": "cases_deaths",
+	"name": "cases_deaths_tumbling_win",
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Stopped",
